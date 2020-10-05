@@ -182,7 +182,7 @@
         <div class='footer-item footer-one'></div>
         <div class='footer-item footer-two'>
             <div>
-                <p class='Address'>Stephanie's Smartphone Shop Website <br>
+                <p class='address'>Stephanie's Smartphone Shop Website <br>
                     1404 Cider Knoll Way <br>
                     West Chester, PA 19382<br>
                     United States <br>
@@ -192,7 +192,27 @@
             </div>
         </div>
         <div class='footer-item footer-three'></div>
+
     </div>
+
+    <script>
+        function ChangeHeader() {
+            let myH1 = document.querySelector('h1')
+            myH1.innerText = "The best smartphones out there"
+        }
+
+        function ChangeBackground() {
+            let myBody = document.querySelector('body')
+            myBody.style.backgroundColor = "rgb(" + (Math.floor(Math.random() * 256)) + "," + (Math.floor(Math.random() * 256)) + "," + (Math.floor(Math.random() * 256)) + ")"
+        }
+
+        function ChangeFooter() {
+            let myAddress = document.querySelector('address')
+            myAddress.innerText = <p class='address'>"19 Tree Road"
+            }
+             
+            }
+    </script>
 </body>
 
 </html>
